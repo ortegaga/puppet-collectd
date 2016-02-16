@@ -4,6 +4,7 @@ define collectd::plugin::curl_json (
   $instance,
   $keys,
   $ensure   = present,
+  $interval = undef,
   $user     = undef,
   $password = undef,
   $order = '10',

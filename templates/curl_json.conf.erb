@@ -8,6 +8,9 @@ LoadPlugin "curl_json"
   <URL "<%= @url %>">
 <%- end -%>
     Instance "<%= @instance %>"
+<% if @interval -%>
+    Interval <%= @interval %>
+<% end -%>
 
 <% if @user %>
     User "<%= @user %>"
